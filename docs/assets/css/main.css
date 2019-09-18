@@ -1,0 +1,307 @@
+@import url("https://fonts.googleapis.com/css?family=Lato:400,400italic,700,700italic|Source+Code+Pro:400");
+@import url("fontawesome-all.min.css");
+
+/* Basic CSS*/
+    html, body, div, span, applet, object,
+    iframe, h1, h2, h3, h4, h5, h6, p, blockquote,
+    pre, a, abbr, acronym, address, big, cite,
+    code, del, dfn, em, img, ins, kbd, q, s, samp,
+    small, strike, strong, sub, sup, tt, var, b,
+    u, i, center, dl, dt, dd, ol, ul, li, fieldset,
+    form, label, legend, table, caption, tbody,
+    tfoot, thead, tr, th, td, article, aside,
+    canvas, details, embed, figure, figcaption,
+    footer, header, hgroup, menu, nav, output, ruby,
+    section, summary, time, mark, audio, video {
+        margin: 0;
+        padding: 0;
+        border: 0;
+        font-size: 100%;
+        font: inherit;
+        vertical-align: baseline;
+    }
+    html {
+		box-sizing: border-box;
+	}
+    *, *:before, *:after {
+		box-sizing: inherit;
+	}
+    body {
+		color: #888;
+		font-family: "Lato", sans-serif;
+		font-size: 16pt;
+		font-weight: 400;
+		line-height: 1.75em;
+	}
+    p {
+        margin: 0 0 2.25em 0;
+    }
+    h1, h2, h3, h4, h5, h6 {
+		color: #777;
+		font-weight: 700;
+		line-height: 1em;
+		margin: 0 0 0.5625em 0;
+    }
+		h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
+			border: 0;
+			color: inherit;
+			text-decoration: none;
+        }
+    h2 {
+        font-size: 2em;
+        line-height: 1.5em;
+    }
+	h3 {
+		font-size: 1.75em;
+		line-height: 1.5em;
+    }
+
+
+
+
+/* Image */
+	.image {
+		border-radius: 5px;
+		border: 0;
+		display: inline-block;
+		position: relative;
+	}
+		.image img {
+            object-fit: cover;
+            border-radius: 5px;
+			display: block;
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+		}
+		.image.main {
+			display: block;
+			height: 20em;
+			border-radius: 0;
+        }
+        .image.main img {
+            border-radius: 0;
+        }
+    .headshot {
+        border-radius: 100%;
+        overflow: hidden;
+    }
+    .headshot img {
+        border-radius: 100%;
+        display: block;
+        width: 100%;
+        margin: 0 auto 2.25em auto;
+        width: 8em;
+    }
+
+    
+
+/* Header */
+    #header {
+		background: #4acaa8;
+		color: #d2f2e9;
+		height: 100%;
+		overflow-y: auto;
+		position: fixed;
+		text-align: center;
+		top: 0;
+		width: 23em;
+		right: 0;
+	}
+        #header h1 a {
+            color: #ffffff;
+        }
+			#header > header h1 {
+				font-size: 1.75em;
+				margin: 0;
+			}
+
+			#header > header p {
+				color: #d2f2e9;
+				font-style: italic;
+				margin: 1em 0 0 0;
+			}
+
+        #header > nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+            #header > nav ul li {
+                border-top: solid 2px #5ccfb1;
+                display: block;
+                padding: 0;
+            }
+                #header > nav ul li a {
+                    border: 0;
+                    color: #ffffff !important;
+                    display: block;
+                    padding: 0.85em 0;
+                    text-decoration: none;
+                }
+                    #header > nav ul li a.active {
+                        background: #fff;
+                        color: #4acaa8 !important;
+                    }
+                #header > nav ul li:first-child {
+                    border-top: 0;
+                }
+/* Different screen sizes */
+    @media screen and (max-width: 1680px) {
+        
+                /* Basic */
+                    body, input, select, textarea {
+                        font-size: 13pt;
+                    }
+        
+                /* Header */
+        
+                    #header {
+                        width: 21em;
+                    }
+        
+                        #header > header {
+                            padding: 2em;
+                        }
+        
+                        #header > footer {
+                            padding: 1.5em;
+                        }
+        
+                /* Wrapper */
+        
+                    #wrapper {
+                        padding-right: 21em;
+                    }
+        
+                /* Main */
+        
+                    #main > section > .container {
+                        padding: 4em 0 2em 0;
+                    }
+        
+            }
+/* Part 1 */
+    .container {
+        margin: 0 auto;
+        max-width: calc(100% - 4.5em);
+        width: 45em;
+    }
+    header.major h2 {
+        color: #4acaa8;
+        font-size: 3.5em;
+    }
+
+        header.major h2 + p {
+            color: #777;
+            font-size: 1.75em;
+            font-weight: 700;
+            margin-top: -0.75em;
+        }
+    header p {
+        color: #aaa;
+        position: relative;
+        margin: 0 0 1.6875em 0;
+    }
+
+    header h2 + p {
+        font-size: 1.25em;
+        margin-top: -0.5em;
+        line-height: 1.5em;
+    }
+
+
+    
+/* Border Lines */
+	#main > section {
+		border-top: solid 6px #f4f4f4;
+	}
+
+		#main > section > .container {
+			padding: 6em 0 4em 0;
+		}
+
+		#main > section:first-child {
+			border-top: 0;
+        }
+/* Part 2 */
+    /* Icon the icons sec 2 */
+    .icon {
+        text-decoration: none;
+        border-bottom: none;
+        position: relative;
+    }
+        .icon:before {
+            -moz-osx-font-smoothing: grayscale;
+            -webkit-font-smoothing: antialiased;
+            display: inline-block;
+            font-style: normal;
+            font-variant: normal;
+            text-rendering: auto;
+            line-height: 1;
+            text-transform: none !important;
+            font-family: 'Font Awesome 5 Free';
+            font-weight: 400;
+        }
+        .icon > .label {
+            display: none;
+        }
+
+        .icon:before {
+            line-height: inherit;
+        }
+
+        .icon.solid:before {
+            font-weight: 900;
+        }
+
+        .icon.brands:before {
+            font-family: 'Font Awesome 5 Brands';
+        }
+    /* Feature Icons - makes the icons pretty */
+
+    ul.feature-icons {
+        list-style: none;
+        padding-left: 0;
+    }
+
+        ul.feature-icons li {
+            text-decoration: none;
+            display: inline-block;
+            margin: 0 0 1.6875em 0;
+            padding: 0.35em 0 0 3.5em;
+            position: relative;
+            vertical-align: top;
+            width: 48%;
+        }
+
+            ul.feature-icons li:before {
+                -moz-osx-font-smoothing: grayscale;
+                -webkit-font-smoothing: antialiased;
+                display: inline-block;
+                font-style: normal;
+                font-variant: normal;
+                text-rendering: auto;
+                line-height: 1;
+                text-transform: none !important;
+                font-family: 'Font Awesome 5 Free';
+                font-weight: 400;
+            }
+
+            ul.feature-icons li:before {
+                background: #4acaa8;
+                border-radius: 100%;
+                color: #ffffff;
+                display: block;
+                height: 2.5em;
+                left: 0;
+                line-height: 2.5em;
+                position: absolute;
+                text-align: center;
+                top: 0;
+                width: 2.5em;
+            }
+            
+    
