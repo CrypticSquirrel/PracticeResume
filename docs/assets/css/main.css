@@ -56,9 +56,6 @@
 		line-height: 1.5em;
     }
 
-
-
-
 /* Image */
 	.image {
 		border-radius: 5px;
@@ -95,8 +92,6 @@
         margin: 0 auto 2.25em auto;
         width: 8em;
     }
-
-    
 
 /* Header */
     #header {
@@ -211,8 +206,6 @@
         margin-top: -0.5em;
         line-height: 1.5em;
     }
-
-
     
 /* Border Lines */
 	#main > section {
@@ -227,7 +220,6 @@
 			border-top: 0;
         }
 /* Part 2 */
-    /* Icon the icons sec 2 */
     .icon {
         text-decoration: none;
         border-bottom: none;
@@ -276,7 +268,6 @@
             vertical-align: top;
             width: 48%;
         }
-
             ul.feature-icons li:before {
                 -moz-osx-font-smoothing: grayscale;
                 -webkit-font-smoothing: antialiased;
@@ -289,7 +280,6 @@
                 font-family: 'Font Awesome 5 Free';
                 font-weight: 400;
             }
-
             ul.feature-icons li:before {
                 background: #4acaa8;
                 border-radius: 100%;
