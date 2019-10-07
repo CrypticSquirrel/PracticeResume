@@ -259,6 +259,11 @@
         padding-left: 0;
     }
 
+        ul.feature-icons a {
+            color: #FFC300;
+            font-weight: bold;
+            text-decoration: none;
+        }
         ul.feature-icons li {
             text-decoration: none;
             display: inline-block;
@@ -294,4 +299,6 @@
                 width: 2.5em;
             }
             
+
+
     
