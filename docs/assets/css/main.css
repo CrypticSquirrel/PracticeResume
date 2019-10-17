@@ -331,3 +331,40 @@
 			.features article .inner > :last-child {
 				margin-bottom: 0;
 			}
+/* Table */
+    table {
+        margin: 0 0 2.25em 0;
+        width: 100%;
+        border-collapse: collapse;
+        border-spacing: 0;
+    }
+        table tbody tr {
+            border: solid 2px #f4f4f4;
+            border-left: 0;
+            border-right: 0;
+        }
+            table tbody tr:nth-child(2n + 1) {
+                background-color: #fafafa;
+            }
+        table td {
+            padding: 0.75em 0.75em;
+        }
+        table thead {
+			border-bottom: solid 4px #e4e4e4;
+        }
+        table tfoot {
+			border-top: solid 4px #e4e4e4;
+		}
+
+        table th {
+            color: #777;
+            font-size: 0.9em;
+            font-weight: 700;
+            padding: 0 0.75em 0.75em 0.75em;
+            text-align: left;
+        }
+
+        
+
+
+
