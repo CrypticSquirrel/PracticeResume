@@ -1,0 +1,8 @@
+// color palette - these colors will be the main colors used in the page. Some variations can occur by mixing different colors together.
+$color-1: #fff; // Basic Background Color
+$color-2: #4acaa8; // Accent 1
+$color-3: #989898; // Accent 2
+
+// fonts
+$primary-font: 'Lato', sans-serif
+$secondary-font: 'Source Code Pro', monospace
